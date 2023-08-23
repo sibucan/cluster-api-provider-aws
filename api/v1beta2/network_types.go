@@ -271,7 +271,7 @@ type VPCSpec struct {
 	// than this number of AZs then this number of AZs will be picked randomly when creating
 	// default subnets. Defaults to 3
 	// +kubebuilder:default=3
-	// +kubebuilder:validation:Minimum=1
+	// +kubebuilder:validation:Minimum=2
 	AvailabilityZoneUsageLimit *int `json:"availabilityZoneUsageLimit,omitempty"`
 
 	// AvailabilityZoneSelection specifies how AZs should be selected if there are more AZs
